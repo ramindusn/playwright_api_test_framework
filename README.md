@@ -6,6 +6,11 @@
 * Winston
 * Docker
 
+## Setup project locally
+* Install dependencies - 'npm install'
+* Run the test - 'npx playwright test'
+* To run the test parallel - Go to 'playwright.config.js' and increase the works. 
+
 ## Run Docker image
 
 Build the image.
