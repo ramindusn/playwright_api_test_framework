@@ -3,7 +3,7 @@
 ## Technologies
 * javascript
 * Playwright
-* winston
+* Winston
 * Docker
 
 ## Run Docker image
@@ -23,3 +23,15 @@ Can stop the docker contain.
 
 2. After the test is completed and while the container is running, perform the below command to copy the report directory to the local directory to access the report locally.
 * docker cp playwright-framework-container:/playwright_api_test_framework/playwright-report playwright-report-from-docker
+
+Overview
+![img.png](report-screenshots/img.png)
+
+Sample Pass test
+![img_1.png](report-screenshots/img_1.png)
+
+Sample Fail test
+![img_3.png](report-screenshots/img_3.png)
+
+Sample log file
+![img_2.png](report-screenshots/img_2.png)
