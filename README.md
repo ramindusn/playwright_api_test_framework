@@ -9,7 +9,9 @@
 ## Setup project locally
 * Install dependencies - 'npm install'
 * Run the test - 'npx playwright test'
-* To run the test parallel - Go to 'playwright.config.js' and increase the works. 
+* To run the test parallel - Go to 'playwright.config.js' and increase the works.
+
+playwright.config.js has the general configurations of the framework. (Eg- BaseURL, Header values, timeout, report type, number of workers(parallel run))
 
 ## Run Docker image
 
