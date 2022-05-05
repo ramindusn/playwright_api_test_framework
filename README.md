@@ -27,10 +27,10 @@ Can stop the docker contain.
 Overview
 ![img.png](report-screenshots/img.png)
 
-Sample Pass test
+Sample - Passed test
 ![img_1.png](report-screenshots/img_1.png)
 
-Sample Fail test
+Sample Failed test
 ![img_3.png](report-screenshots/img_3.png)
 
 Sample log file
