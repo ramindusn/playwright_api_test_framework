@@ -1,0 +1,22 @@
+{
+  "name": "playwright_api_test_framework",
+  "version": "1.0.0",
+  "description": "API automation framework",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramindusn/playwright_api_test_framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramindusn/playwright_api_test_framework/issues"
+  },
+  "homepage": "https://github.com/ramindusn/playwright_api_test_framework#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.21.1",
+    "winston": "^3.7.2"
+  }
+}
