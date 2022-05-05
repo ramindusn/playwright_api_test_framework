@@ -10,7 +10,7 @@ test.afterEach(async ({ page }, testInfo) => {
     logger.info(`Worker ${testInfo.workerIndex} - Finished ${testInfo.title} with status ${testInfo.status}`);
   
     if (testInfo.status !== testInfo.expectedStatus)
-        logger.info(`Worker ${testInfo.workerIndex} - Did not run as expected, ended up at ${page.url()}`);
+        logger.info(`Worker ${testInfo.workerIndex} - Did not run as expected !`);
 
     if(testInfo.config.workers==1)    
         logger.info("-------------------------------------------------------"); 
