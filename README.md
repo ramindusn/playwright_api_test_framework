@@ -1,4 +1,4 @@
-# playwright_api_test_framework
+# Playwright Api Test Framework
 
 ## Technologies
 * javascript
