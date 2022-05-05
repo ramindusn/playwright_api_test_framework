@@ -21,5 +21,4 @@ test('when the request used an incorrect method - PUT', async ({ request },testI
     const response = await request.put('/cad.api',{});
     //Assert
     expect(response.status()).toBe(405);
-    logger.info(await response.json());
 });
