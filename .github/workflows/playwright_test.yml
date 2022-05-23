@@ -1,0 +1,30 @@
+name: Playwright Tests
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  playwright-tests:
+    runs-on: ubuntu-latest # or macos-latest, windows-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+
+      - uses: microsoft/playwright-github-action@v1
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Test
+        run: npx playwright test
+
+      - uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30

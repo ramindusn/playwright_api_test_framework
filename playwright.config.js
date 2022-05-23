@@ -1,5 +1,4 @@
 // @ts-check
-const { devices } = require('@playwright/test');
 
 /**
  * @see https://playwright.dev/docs/test-configuration
@@ -21,7 +20,12 @@ const config = {
   /* Opt out of parallel tests on CI. */
   workers: 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [
+    ["json", { outputFile: "test-result.json" }], //  -> JSON
+    ['html', {
+      open: "never"
+    }] // -> HTML
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use */
